@@ -12,6 +12,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { background: linear-gradient(180deg, #fbfaf6 0%, var(--paper) 100%); color: var(--ink); font-family: 'Cabin', sans-serif; line-height: 1.65; }
+img { display: block; width: 100%; }
 a { color: inherit; }
 .site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 4vw; background: rgba(251,250,246,0.92); border-bottom: 1px solid rgba(38,51,41,0.08); backdrop-filter: blur(14px); }
 .brand { font-family: 'Baskervville', serif; font-size: 1.45rem; line-height: 1.02; text-decoration: none; }
@@ -22,6 +23,7 @@ a { color: inherit; }
 .hero-shell,.services-shell,.areas-shell,.site-footer { padding: 4.8rem 4vw; }
 .eyebrow { color: var(--forest); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
 .hero-shell { display: grid; grid-template-columns: minmax(0,1fr) minmax(280px,0.72fr); gap: 1.2rem; align-items: center; }
+.hero-aside { display: grid; gap: 1rem; }
 .hero-copy h1,.section-header h2,.services-grid h3,.areas-grid h3,.hero-panel strong { font-family: 'Baskervville', serif; font-weight: 400; line-height: 1.03; letter-spacing: -0.02em; }
 .hero-copy h1 { margin-top: 1rem; font-size: clamp(2.9rem,6vw,4.8rem); max-width: 11ch; }
 .intro,.section-header,.services-grid p,.areas-grid p,.hero-panel span,.site-footer p { color: var(--ink-soft); }
@@ -30,7 +32,9 @@ a { color: inherit; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 3.15rem; padding: 0.95rem 1.25rem; border: 1px solid transparent; font-size: 0.79rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; }
 .button-solid { background: var(--ink); color: var(--white); }
 .button-outline { border-color: var(--line); }
-.hero-panel,.services-grid article,.areas-grid article { border-radius: 1.5rem; box-shadow: var(--shadow); }
+.hero-photo,.hero-panel,.services-grid article,.areas-grid article { border-radius: 1.5rem; box-shadow: var(--shadow); }
+.hero-photo { overflow: hidden; min-height: 21rem; border: 1px solid rgba(38,51,41,0.08); }
+.hero-photo img { height: 100%; min-height: 21rem; object-fit: cover; }
 .hero-panel { display: grid; gap: 1rem; padding: 1.5rem; background: var(--paper-strong); }
 .hero-panel div { padding-top: 0.9rem; border-top: 1px solid var(--line); }
 .hero-panel span { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
